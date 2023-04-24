@@ -1,0 +1,23 @@
+// Friend Number Checker
+
+function friendNumber(a, b) {
+  let sumA = 0, sumB = 0;
+  for (let i = 1; i <= a/2; i++) {
+    if (a % i === 0) {
+      sumA += i;
+    }
+  }
+  for (let i = 1; i <= b/2; i++) {
+    if (b % i === 0) {
+      sumB += i;
+    }
+  }
+  if (sumA === b && sumB === a) {
+    console.log(a + " and " + b + " are friend numbers.");
+  } else {
+    console.log(a + " and " + b + " are not friend numbers.");
+  }
+}
+
+// Using example :
+// friendNumber(220, 284);

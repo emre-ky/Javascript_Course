@@ -1,0 +1,22 @@
+// Prime Number Checker
+
+function primeController() {
+  for (var i = 0; i < arguments.length; i++) {
+    var asal = true;
+    for (var j = 2; j < arguments[i]; j++) {
+      if (arguments[i] % j === 0) {
+        asal = false;
+        break;
+      }
+    }
+    if (asal) {
+      console.log(arguments[i] + " is prime number.");
+    } else {
+      console.log(arguments[i] + " is not a prime number.");
+    }
+  }
+}
+
+
+// Using example :
+// primeController(7, 8, 11, 15, 17, 21);
